@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Token Swap</title>
+
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div>
+		<h2>Interface</h2>
+		<p>Account: <span id="accountAddress">X</span></p>
+	</div>
+
+	<div>
+		<input placeholder="Amount of Tokens" id="amount" type="numer" step="0.1" />
+	</div>
+
+	<div>
+		<button onclick="connectWallet()">Connect Wallet</button>
+	</div>
+
+	<div>
+		<button onclick="step1()">Step 1: Approve Token Spend</button>
+	</div>
+
+	<div>
+		<button onclick="step2()">Step 2: Swap Tokens</button>
+	</div>
+
+	<div>
+		<button onclick="burn()">Burn Tokens</button>
+	</div>
+
+	<div>
+		Mint Price: <span id="mintPriceValue"></span>
+		<br>
+		<br>
+		Burn Price: <span id="burnPriceValue"></span>
+		<br>
+		<br>
+		<button onclick="getPrices()">Reload Prices</button>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.1-rc.0/web3.min.js" integrity="sha512-Ui9NE+/XdhwxssTrWetwWgpwpZJCLgTpB2dgkq+xe3O7lmZEJe+2rw3OT3YbYIUCQWH5dOO8ObLOYmbUVpPBgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="./bundle.js"></script>
+	<script src="./script.js"></script>
+</body>
+</html>

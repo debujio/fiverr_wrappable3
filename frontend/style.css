@@ -1,0 +1,9 @@
+div {
+	padding: 20px;
+}
+
+input, button {
+	width: 100%;
+	max-width: 300px;
+	padding: 10px;
+}
