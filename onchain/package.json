@@ -1,0 +1,25 @@
+{
+  "name": "onchain",
+  "version": "1.0.0",
+  "main": "prepare.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.4.0",
+    "@openzeppelin/contracts": "^4.5.0",
+    "@truffle/hdwallet-provider": "^2.0.3"
+  },
+  "devDependencies": {
+    "browser-resolve": "^2.0.0",
+    "browserify": "^17.0.0",
+    "esmify": "^2.1.1"
+  },
+  "scripts": {
+    "bundle": "browserify prepare.js -p esmify > ../frontend/bundle.js -s bundle"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
